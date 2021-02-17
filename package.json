@@ -1,0 +1,35 @@
+{
+  "name": "eth_twitter",
+  "version": "1.0.0",
+  "description": "Tweet smart contract",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "rm -rf bulid && truffle test",
+    "server": "ganache-cli",
+    "build": "truffle complie",
+    "coverage": "rm -rf build && truffle run coverage",
+    "migrate": "truffle migrate --network ropsten"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exposedbee/eth_twitter.git"
+  },
+  "author": "saudahmad.aman@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/exposedbee/eth_twitter/issues"
+  },
+  "homepage": "https://github.com/exposedbee/eth_twitter#readme",
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.10",
+    "solidity-coverage": "^0.7.15"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.2",
+    "chai": "^4.3.0",
+    "dotenv": "^8.2.0"
+  }
+}
